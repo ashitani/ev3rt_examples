@@ -44,3 +44,7 @@ make upload 10.0.10.1 app app
 最後の引数はコピー後のファイル名です。好きな名前をつけておくと、あとから
 [Load App][SD Card]から選択して起動できます。
 
+# 参考リンク
+
+- [EV3RT公式](https://dev.toppers.jp/trac_user/ev3pf/wiki/WhatsEV3RT)
+- [EV3RT C API](https://www.toppers.jp/ev3pf/EV3RT_C_API_Reference/index.html)
