@@ -7,7 +7,11 @@ EV3RTの練習です。
 
 利用環境はV1.0(HRP3カーネル)です。
 
-# インストール
+# EV3RTのインストール
+
+https://dev.toppers.jp/trac_user/ev3pf/wiki/DevEnv
+
+# 本レポジトリのインストール
 
 ```
 cd hrp3/sdk
