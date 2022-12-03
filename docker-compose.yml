@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  ev3dev:
+    build: .
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/ev3rt/hrp3/sdk/ev3rt_examples
