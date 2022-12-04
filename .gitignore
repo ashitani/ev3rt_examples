@@ -1,3 +1,5 @@
 app
 uImage
 sdcard/
+libcpp-ev3/
+test-cpp/
