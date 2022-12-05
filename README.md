@@ -46,6 +46,8 @@ docker compose down
 
 # アプリの転送（ホストから）
 
+[公式サイト](https://dev.toppers.jp/trac_user/ev3pf/wiki/SampleProgram)を参照してください。SDカードにコピー,USBケーブル経由でのコピー、bluetooth経由での転送、などいろいろ方法があります。下記ではbluetooth転送をホストから行う方法を記載します。
+
 bluetoothでEV3とペアリングします。その後、PAN接続を行います。Macの場合、bluetoothアイコンからMindstromsEV3->ネットワークに接続、などで接続できます。
 
 この状態で、EV3本体で[Load App][Bluetooth PAN]を選択します。
@@ -58,6 +60,19 @@ EV3のIPアドレスが10.0.10.1のとき、下記コマンドでアプリを転
 でfrom=app to=アプリ名として転送できるスクリプトを作っておきました。IPアドレスが異なる場合はupload.shを編集しておいてください。
 
 EV3側で[Load App][SD Card]からtoでつけたアプリ名を選択すれば起動できます。
+
+
+# 開発環境へのログイン
+
+docker compose upされている状態で、下記を実行すると開発環境コンテナにログインできます。
+
+```
+docker compose exec ev3dev bash
+```
+
+/ev3rt以下に開発環境がインストールされていて、/ev3rt/hrp3/sdk/ev3rt_examples以下に本フォルダがマウントされています。
+
+/ev3rt/hrp3/sdk/workspaceには本家のサンプルファイルがいくつか入っているので参考にするといいでしょう。
 
 # ホストとEV3との通信
 
